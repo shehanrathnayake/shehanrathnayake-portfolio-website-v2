@@ -1,5 +1,6 @@
+
 import { useState, useEffect } from "react";
-import { Menu, X, Code } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,10 +30,10 @@ export const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <div className="bg-blue-500 p-2 rounded-lg">
-              <Code className="w-6 h-6 text-white" />
+            <div className="bg-blue-500 p-2 rounded-lg w-10 h-10 flex items-center justify-center">
+              <span className="text-white font-bold text-xl font-mono">S</span>
             </div>
-            <span className="text-xl font-bold text-slate-100">Portfolio</span>
+            <span className="text-xl font-bold text-slate-100">Shehan</span>
           </div>
 
           {/* Desktop Navigation */}
