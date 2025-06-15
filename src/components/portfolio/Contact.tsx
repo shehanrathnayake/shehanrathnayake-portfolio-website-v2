@@ -1,3 +1,4 @@
+
 import { Mail, Terminal, ExternalLink, PenTool } from "lucide-react";
 
 export const Contact = () => {
@@ -26,13 +27,13 @@ export const Contact = () => {
                 </div>
                 <div className="space-y-2 font-mono text-sm">
                   <div className="text-slate-300">
-                    <span className="text-blue-400">email:</span> <span className="text-green-400">"your.email@example.com"</span>
+                    <span className="text-blue-400">email:</span> <span className="text-green-400">"shehanr.rathnayake@gmail.com"</span>
                   </div>
                   <div className="text-slate-300">
-                    <span className="text-blue-400">linkedin:</span> <span className="text-green-400">"linkedin.com/in/yourprofile"</span>
+                    <span className="text-blue-400">linkedin:</span> <span className="text-green-400">"linkedin.com/in/shehanrathnayake"</span>
                   </div>
                   <div className="text-slate-300">
-                    <span className="text-blue-400">github:</span> <span className="text-green-400">"github.com/yourusername"</span>
+                    <span className="text-blue-400">github:</span> <span className="text-green-400">"github.com/shehanrathnayake"</span>
                   </div>
                   <div className="text-slate-300">
                     <span className="text-blue-400">blog:</span> <span className="text-green-400">"medium.com/@shehan_rathnayake"</span>
@@ -108,7 +109,7 @@ export const Contact = () => {
 
         <div className="text-center mt-12 pt-8 border-t border-slate-800">
           <p className="text-slate-400 font-mono text-sm">
-            © 2024 Your Name. Built with React + Tailwind CSS
+            © 2025 Shehan Rathnayake. All Rights Reserved.
           </p>
         </div>
       </div>

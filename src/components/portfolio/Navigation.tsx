@@ -30,12 +30,15 @@ export const Navigation = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <div className="bg-slate-800 border border-slate-600 p-2 rounded-lg flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
-              <span className="text-blue-400 font-bold text-lg font-mono relative z-10">
+            <a
+              href="/"
+              className="bg-slate-800 border border-slate-600 p-2 rounded-lg flex items-center justify-center relative overflow-hidden cursor-pointer transition-all duration-200 hover:border-blue-500/50 hover:bg-slate-700/80"
+            >
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 hover:from-blue-500/30 hover:to-purple-500/30 transition-all duration-200"></div>
+              <span className="text-blue-400 font-bold text-lg font-mono relative z-10 hover:text-blue-300 transition-colors duration-200">
                 {"<Shehan/>"}
               </span>
-            </div>
+            </a>
           </div>
 
           {/* Desktop Navigation */}

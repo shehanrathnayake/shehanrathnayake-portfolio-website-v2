@@ -27,8 +27,8 @@ export const About = () => {
                 </div>
                 <div className="relative">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
-                    alt="Profile"
+                    src="/lovable-uploads/da308304-cc9d-4903-a592-3c7051208e42.png"
+                    alt="Shehan Rathnayake"
                     className="w-48 h-48 rounded-lg object-cover border-2 border-slate-600 shadow-lg"
                   />
                   <div className="absolute inset-0 rounded-lg bg-gradient-to-tr from-blue-500/10 to-purple-500/10"></div>
@@ -49,16 +49,16 @@ export const About = () => {
               </div>
               <div className="space-y-2 pl-4 font-mono text-sm">
                 <div className="text-slate-300">
-                  <span className="text-blue-400">name:</span> <span className="text-green-400">"Your Name"</span>,
+                  <span className="text-blue-400">name:</span> <span className="text-green-400">"Shehan Rathnayake"</span>,
                 </div>
                 <div className="text-slate-300">
                   <span className="text-blue-400">title:</span> <span className="text-green-400">"Software Engineer"</span>,
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">location:</span> <span className="text-green-400">"Your Location"</span>,
+                  <span className="text-blue-400">location:</span> <span className="text-green-400">"Colombo"</span>,
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">experience:</span> <span className="text-yellow-400">3</span>,
+                  <span className="text-blue-400">experience:</span> <span className="text-yellow-400">2</span>,
                 </div>
                 <div className="text-slate-300">
                   <span className="text-blue-400">passion:</span> <span className="text-green-400">"Clean Code & Innovation"</span>
@@ -91,7 +91,7 @@ export const About = () => {
               </div>
               <div className="text-center p-4 bg-slate-800/20 rounded-lg border border-slate-700">
                 <Terminal className="w-8 h-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-100">3+</div>
+                <div className="text-2xl font-bold text-slate-100">2+</div>
                 <div className="text-sm text-slate-400">Years Exp</div>
               </div>
               <div className="text-center p-4 bg-slate-800/20 rounded-lg border border-slate-700">
