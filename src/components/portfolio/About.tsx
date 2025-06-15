@@ -16,8 +16,32 @@ export const About = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+        <div className="grid lg:grid-cols-3 gap-12 items-center">
+          {/* Photo Section */}
+          <div className="lg:col-span-1 flex justify-center">
+            <div className="relative">
+              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 backdrop-blur-sm">
+                <div className="flex items-center gap-2 mb-4 text-sm text-slate-400 font-mono">
+                  <Terminal className="w-4 h-4" />
+                  <span>profile.jpg</span>
+                </div>
+                <div className="relative">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                    alt="Profile"
+                    className="w-48 h-48 rounded-lg object-cover border-2 border-slate-600 shadow-lg"
+                  />
+                  <div className="absolute inset-0 rounded-lg bg-gradient-to-tr from-blue-500/10 to-purple-500/10"></div>
+                </div>
+                <div className="text-xs text-slate-500 font-mono mt-2 text-center">
+                  300x300px • 24KB
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Code Block Section */}
+          <div className="lg:col-span-1">
             <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-center gap-2 mb-4 text-sm text-slate-400 font-mono">
                 <Terminal className="w-4 h-4" />
@@ -45,7 +69,8 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="space-y-6">
+          {/* Text Content Section */}
+          <div className="lg:col-span-1 space-y-6">
             <p className="text-slate-300 leading-relaxed">
               I'm a passionate software engineer with a love for creating innovative solutions 
               and writing clean, efficient code. My journey in programming started with curiosity 
