@@ -1,5 +1,4 @@
-
-import { Mail, Terminal } from "lucide-react";
+import { Mail, Terminal, ExternalLink, PenTool } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -35,6 +34,9 @@ export const Contact = () => {
                   <div className="text-slate-300">
                     <span className="text-blue-400">github:</span> <span className="text-green-400">"github.com/yourusername"</span>
                   </div>
+                  <div className="text-slate-300">
+                    <span className="text-blue-400">blog:</span> <span className="text-green-400">"medium.com/@shehan_rathnayake"</span>
+                  </div>
                 </div>
               </div>
               
@@ -43,7 +45,20 @@ export const Contact = () => {
                   I'm always interested in new opportunities and exciting projects. 
                   Whether you have a question or just want to say hi, feel free to reach out!
                 </p>
-                <p>
+                <p className="mb-4">
+                  Check out my latest thoughts and technical articles on my blog.
+                </p>
+                <a
+                  href="https://medium.com/@shehan_rathnayake"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-mono text-sm"
+                >
+                  <PenTool className="w-4 h-4" />
+                  <span>Read my blog on Medium</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+                <p className="mt-4 text-sm">
                   Response time: Usually within 24 hours ⚡
                 </p>
               </div>
