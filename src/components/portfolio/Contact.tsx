@@ -1,5 +1,5 @@
 
-import { Mail, Terminal, ExternalLink, PenTool } from "lucide-react";
+import { Mail, Terminal, ExternalLink, PenTool, Linkedin, Github } from "lucide-react";
 
 export const Contact = () => {
   return (
@@ -18,92 +18,48 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-8 backdrop-blur-sm">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <div className="bg-slate-900/50 border border-slate-600 rounded-lg p-4">
-                <div className="flex items-center gap-2 mb-2 text-sm text-slate-400 font-mono">
-                  <span>// Contact Information</span>
-                </div>
-                <div className="space-y-2 font-mono text-sm">
-                  <div className="text-slate-300">
-                    <span className="text-blue-400">email:</span> <span className="text-green-400">"shehanr.rathnayake@gmail.com"</span>
-                  </div>
-                  <div className="text-slate-300">
-                    <span className="text-blue-400">linkedin:</span> <span className="text-green-400">"linkedin.com/in/shehanrathnayake"</span>
-                  </div>
-                  <div className="text-slate-300">
-                    <span className="text-blue-400">github:</span> <span className="text-green-400">"github.com/shehanrathnayake"</span>
-                  </div>
-                  <div className="text-slate-300">
-                    <span className="text-blue-400">blog:</span> <span className="text-green-400">"medium.com/@shehan_rathnayake"</span>
-                  </div>
-                </div>
+        <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-8 backdrop-blur-sm max-w-2xl mx-auto">
+          <div className="bg-slate-900/50 border border-slate-600 rounded-lg p-4">
+            <div className="flex items-center gap-2 mb-2 text-sm text-slate-400 font-mono">
+              <span>// Contact Information</span>
+            </div>
+            <div className="space-y-2 font-mono text-sm">
+              <div className="text-slate-300">
+                <span className="text-blue-400">email:</span> <span className="text-green-400">"shehanr.rathnayake@gmail.com"</span>
               </div>
-              
-              <div className="text-slate-400">
-                <p className="mb-4">
-                  I'm always interested in new opportunities and exciting projects. 
-                  Whether you have a question or just want to say hi, feel free to reach out!
-                </p>
-                <p className="mb-4">
-                  Check out my latest thoughts and technical articles on my blog.
-                </p>
-                <a
-                  href="https://medium.com/@shehan_rathnayake"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-mono text-sm"
-                >
-                  <PenTool className="w-4 h-4" />
-                  <span>Read my blog on Medium</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
-                <p className="mt-4 text-sm">
-                  Response time: Usually within 24 hours ⚡
-                </p>
+              <div className="text-slate-300">
+                <span className="text-blue-400">linkedin:</span> <span className="text-green-400">"linkedin.com/in/shehanrathnayake"</span>
+              </div>
+              <div className="text-slate-300">
+                <span className="text-blue-400">github:</span> <span className="text-green-400">"github.com/shehanrathnayake"</span>
+              </div>
+              <div className="text-slate-300">
+                <span className="text-blue-400">blog:</span> <span className="text-green-400">"medium.com/@shehan_rathnayake"</span>
               </div>
             </div>
-
-            <div className="space-y-4">
-              <div>
-                <label className="block text-slate-300 font-mono text-sm mb-2">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  className="w-full bg-slate-900/50 border border-slate-600 rounded-lg px-4 py-3 text-slate-100 focus:border-blue-500 focus:outline-none transition-colors font-mono"
-                  placeholder="Your Name"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-slate-300 font-mono text-sm mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="w-full bg-slate-900/50 border border-slate-600 rounded-lg px-4 py-3 text-slate-100 focus:border-blue-500 focus:outline-none transition-colors font-mono"
-                  placeholder="your.email@example.com"
-                />
-              </div>
-              
-              <div>
-                <label className="block text-slate-300 font-mono text-sm mb-2">
-                  Message
-                </label>
-                <textarea
-                  rows={4}
-                  className="w-full bg-slate-900/50 border border-slate-600 rounded-lg px-4 py-3 text-slate-100 focus:border-blue-500 focus:outline-none transition-colors font-mono resize-none"
-                  placeholder="Tell me about your project..."
-                />
-              </div>
-              
-              <button className="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105 flex items-center justify-center gap-2">
-                <Mail className="w-5 h-5" />
-                Send Message
-              </button>
-            </div>
+          </div>
+          
+          <div className="text-slate-400 mt-6">
+            <p className="mb-4">
+              I'm always interested in new opportunities and exciting projects. 
+              Whether you have a question or just want to say hi, feel free to reach out!
+            </p>
+            <p className="mb-4">
+              Check out my latest thoughts and technical articles on my blog.
+            </p>
+            <a
+              href="https://medium.com/@shehan_rathnayake"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-mono text-sm"
+            >
+              <PenTool className="w-4 h-4" />
+              <span>Read my blog on Medium</span>
+              <ExternalLink className="w-3 h-3" />
+            </a>
+            <p className="mt-4 text-sm">
+              Response time: Usually within 24 hours ⚡
+            </p>
           </div>
         </div>
 

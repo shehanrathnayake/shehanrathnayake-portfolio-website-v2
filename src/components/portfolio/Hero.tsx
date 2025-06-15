@@ -1,5 +1,5 @@
 
-import { Code, Terminal } from "lucide-react";
+import { Code, Terminal, Mail, Linkedin, Github, PenTool } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export const Hero = () => {
@@ -19,6 +19,37 @@ export const Hero = () => {
     
     return () => clearInterval(timer);
   }, []);
+
+  const socialLinks = [
+    {
+      name: "Email",
+      href: "mailto:shehanr.rathnayake@gmail.com",
+      icon: Mail,
+      color: "text-red-400 hover:text-red-300",
+      bgColor: "hover:bg-red-500/10"
+    },
+    {
+      name: "LinkedIn",
+      href: "https://linkedin.com/in/shehanrathnayake",
+      icon: Linkedin,
+      color: "text-blue-400 hover:text-blue-300",
+      bgColor: "hover:bg-blue-500/10"
+    },
+    {
+      name: "GitHub",
+      href: "https://github.com/shehanrathnayake",
+      icon: Github,
+      color: "text-slate-300 hover:text-white",
+      bgColor: "hover:bg-slate-500/10"
+    },
+    {
+      name: "Blog",
+      href: "https://medium.com/@shehan_rathnayake",
+      icon: PenTool,
+      color: "text-green-400 hover:text-green-300",
+      bgColor: "hover:bg-green-500/10"
+    }
+  ];
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -46,10 +77,29 @@ export const Hero = () => {
           </div>
         </div>
         
-        <p className="text-lg text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
           Passionate about creating elegant solutions to complex problems. 
           I build scalable applications with modern technologies and clean code practices.
         </p>
+
+        {/* Social Links */}
+        <div className="flex justify-center gap-4 mb-10">
+          {socialLinks.map((link) => {
+            const IconComponent = link.icon;
+            return (
+              <a
+                key={link.name}
+                href={link.href}
+                target={link.href.startsWith('mailto:') ? '_self' : '_blank'}
+                rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                className={`group flex items-center justify-center w-12 h-12 rounded-full border border-slate-600 ${link.bgColor} transition-all duration-200 hover:scale-110 hover:border-slate-500`}
+                title={link.name}
+              >
+                <IconComponent className={`w-5 h-5 ${link.color} transition-colors duration-200`} />
+              </a>
+            );
+          })}
+        </div>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
