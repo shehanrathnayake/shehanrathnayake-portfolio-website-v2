@@ -27,16 +27,46 @@ export const Contact = () => {
               </div>
               <div className="space-y-2 font-mono text-sm">
                 <div className="text-slate-300">
-                  <span className="text-blue-400">email:</span> <span className="text-green-400">"shehanr.rathnayake@gmail.com"</span>
+                  <span className="text-blue-400">email:</span> 
+                  <a 
+                    href="mailto:shehanr.rathnayake@gmail.com" 
+                    className="text-green-400 hover:text-green-300 transition-colors ml-1"
+                  >
+                    "shehanr.rathnayake@gmail.com"
+                  </a>
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">linkedin:</span> <span className="text-green-400">"linkedin.com/in/shehanrathnayake"</span>
+                  <span className="text-blue-400">linkedin:</span> 
+                  <a 
+                    href="https://linkedin.com/in/shehanrathnayake" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300 transition-colors ml-1"
+                  >
+                    "linkedin.com/in/shehanrathnayake"
+                  </a>
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">github:</span> <span className="text-green-400">"github.com/shehanrathnayake"</span>
+                  <span className="text-blue-400">github:</span> 
+                  <a 
+                    href="https://github.com/shehanrathnayake" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300 transition-colors ml-1"
+                  >
+                    "github.com/shehanrathnayake"
+                  </a>
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">blog:</span> <span className="text-green-400">"medium.com/@shehan_rathnayake"</span>
+                  <span className="text-blue-400">blog:</span> 
+                  <a 
+                    href="https://medium.com/@shehan_rathnayake" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-green-400 hover:text-green-300 transition-colors ml-1"
+                  >
+                    "medium.com/@shehan_rathnayake"
+                  </a>
                 </div>
               </div>
             </div>
