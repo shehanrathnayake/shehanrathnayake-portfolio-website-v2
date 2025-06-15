@@ -1,10 +1,9 @@
-
 import { Mail, Terminal, ExternalLink, PenTool, Linkedin, Github } from "lucide-react";
 
 export const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-slate-900/50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-slate-800/50 px-4 py-2 rounded-full border border-slate-700 mb-4">
             <Terminal className="w-4 h-4 text-cyan-400" />
