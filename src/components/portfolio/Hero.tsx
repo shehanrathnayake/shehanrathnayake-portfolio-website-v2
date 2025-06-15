@@ -64,6 +64,18 @@ export const Hero = () => {
           <span className="text-green-400 font-mono text-sm">~/portfolio</span>
         </div>
         
+        {/* Profile Image */}
+        <div className="mb-8 flex justify-center">
+          <div className="relative">
+            <img
+              src="/lovable-uploads/da308304-cc9d-4903-a592-3c7051208e42.png"
+              alt="Shehan Rathnayake"
+              className="w-32 h-32 rounded-full object-cover border-4 border-slate-600 shadow-2xl"
+            />
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-purple-500/20"></div>
+          </div>
+        </div>
+        
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
           Hello World!
         </h1>

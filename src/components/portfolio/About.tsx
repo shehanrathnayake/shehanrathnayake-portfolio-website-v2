@@ -16,30 +16,7 @@ export const About = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12 items-center">
-          {/* Photo Section */}
-          <div className="lg:col-span-1 flex justify-center">
-            <div className="relative">
-              <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 backdrop-blur-sm">
-                <div className="flex items-center gap-2 mb-4 text-sm text-slate-400 font-mono">
-                  <Terminal className="w-4 h-4" />
-                  <span>profile.jpg</span>
-                </div>
-                <div className="relative">
-                  <img
-                    src="/lovable-uploads/da308304-cc9d-4903-a592-3c7051208e42.png"
-                    alt="Shehan Rathnayake"
-                    className="w-48 h-48 rounded-lg object-cover border-2 border-slate-600 shadow-lg"
-                  />
-                  <div className="absolute inset-0 rounded-lg bg-gradient-to-tr from-blue-500/10 to-purple-500/10"></div>
-                </div>
-                <div className="text-xs text-slate-500 font-mono mt-2 text-center">
-                  300x300px • 24KB
-                </div>
-              </div>
-            </div>
-          </div>
-
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Code Block Section */}
           <div className="lg:col-span-1">
             <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 backdrop-blur-sm">
