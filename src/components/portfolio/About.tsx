@@ -1,4 +1,5 @@
 
+import React from "react";
 import { User, Code, Terminal, Coffee } from "lucide-react";
 
 export const About = () => {
@@ -20,7 +21,7 @@ export const About = () => {
             <div className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 backdrop-blur-sm">
               <div className="flex items-center gap-2 mb-4 text-sm text-slate-400 font-mono">
                 <Terminal className="w-4 h-4" />
-                <span>const developer = {</span>
+                <span>const developer = {"{"}</span>
               </div>
               <div className="space-y-2 pl-4 font-mono text-sm">
                 <div className="text-slate-300">
@@ -39,7 +40,8 @@ export const About = () => {
                   <span className="text-blue-400">passion:</span> <span className="text-green-400">"Clean Code & Innovation"</span>
                 </div>
               </div>
-              <div className="text-sm text-slate-400 font-mono mt-4">};</div>
+              <div className="text-sm text-slate-400 font-mono mt-4">{"}"};
+              </div>
             </div>
           </div>
 
