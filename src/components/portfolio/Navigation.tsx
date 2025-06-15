@@ -29,14 +29,13 @@ export const Navigation = () => {
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-2">
-            <div className="bg-slate-800 border border-slate-600 p-2 rounded-lg w-12 h-10 flex items-center justify-center relative overflow-hidden">
+          <div className="flex items-center">
+            <div className="bg-slate-800 border border-slate-600 p-2 rounded-lg flex items-center justify-center relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
               <span className="text-blue-400 font-bold text-lg font-mono relative z-10">
-                {"<S/>"}
+                {"<Shehan/>"}
               </span>
             </div>
-            <span className="text-xl font-bold text-slate-100">Shehan</span>
           </div>
 
           {/* Desktop Navigation */}
