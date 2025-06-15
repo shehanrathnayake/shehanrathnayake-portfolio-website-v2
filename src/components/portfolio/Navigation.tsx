@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-import { Menu, X, Code, ExternalLink } from "lucide-react";
+import { Menu, X, Code } from "lucide-react";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +18,7 @@ export const Navigation = () => {
     { name: "About", href: "#about" },
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
+    { name: "Blog", href: "#blog" },
     { name: "Experience", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];
@@ -46,15 +47,6 @@ export const Navigation = () => {
                 {`<${item.name} />`}
               </a>
             ))}
-            <a
-              href="https://medium.com/@shehan_rathnayake"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-slate-300 hover:text-blue-400 transition-colors duration-200 font-mono text-sm flex items-center gap-1"
-            >
-              <span>{"<Blog />"}</span>
-              <ExternalLink className="w-3 h-3" />
-            </a>
           </div>
 
           {/* Mobile Navigation Toggle */}
@@ -80,16 +72,6 @@ export const Navigation = () => {
                   {`<${item.name} />`}
                 </a>
               ))}
-              <a
-                href="https://medium.com/@shehan_rathnayake"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block px-3 py-2 text-slate-300 hover:text-blue-400 transition-colors duration-200 font-mono flex items-center gap-1"
-                onClick={() => setIsOpen(false)}
-              >
-                <span>{"<Blog />"}</span>
-                <ExternalLink className="w-3 h-3" />
-              </a>
             </div>
           </div>
         )}
