@@ -1,3 +1,4 @@
+
 import { Mail, Terminal, ExternalLink, PenTool, Linkedin, Github } from "lucide-react";
 
 export const Contact = () => {
@@ -29,7 +30,7 @@ export const Contact = () => {
                   <span className="text-blue-400">email:</span> 
                   <a 
                     href="mailto:shehanr.rathnayake@gmail.com" 
-                    className="text-green-400 hover:text-green-300 transition-colors ml-1"
+                    className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
                     "shehanr.rathnayake@gmail.com"
                   </a>
@@ -40,7 +41,7 @@ export const Contact = () => {
                     href="https://linkedin.com/in/shehanrathnayake" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-green-400 hover:text-green-300 transition-colors ml-1"
+                    className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
                     "linkedin.com/in/shehanrathnayake"
                   </a>
@@ -51,7 +52,7 @@ export const Contact = () => {
                     href="https://github.com/shehanrathnayake" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-green-400 hover:text-green-300 transition-colors ml-1"
+                    className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
                     "github.com/shehanrathnayake"
                   </a>
@@ -62,7 +63,7 @@ export const Contact = () => {
                     href="https://medium.com/@shehan_rathnayake" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-green-400 hover:text-green-300 transition-colors ml-1"
+                    className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
                     "medium.com/@shehan_rathnayake"
                   </a>
