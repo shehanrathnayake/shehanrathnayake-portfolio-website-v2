@@ -83,7 +83,7 @@ export const Hero = () => {
         </p>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-4 mb-10">
+        <div className="flex justify-center gap-4">
           {socialLinks.map((link) => {
             const IconComponent = link.icon;
             return (
@@ -99,22 +99,6 @@ export const Hero = () => {
               </a>
             );
           })}
-        </div>
-        
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#projects"
-            className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
-          >
-            <Code className="w-5 h-5" />
-            View My Work
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 border border-slate-600 hover:border-slate-500 text-slate-300 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 hover:scale-105"
-          >
-            Get In Touch
-          </a>
         </div>
       </div>
     </section>
