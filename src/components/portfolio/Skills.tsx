@@ -1,23 +1,51 @@
 
-import { Code } from "lucide-react";
+import { Code, Database, Server, Globe, Cpu, GitBranch, Cloud, Terminal, Layers, Box, Settings, FileCode } from "lucide-react";
 
 export const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js", "JavaScript"]
+      skills: [
+        { name: "React", icon: <Globe className="w-5 h-5 text-blue-400" /> },
+        { name: "TypeScript", icon: <FileCode className="w-5 h-5 text-blue-600" /> },
+        { name: "Tailwind CSS", icon: <Layers className="w-5 h-5 text-cyan-400" /> },
+        { name: "Next.js", icon: <Globe className="w-5 h-5 text-gray-300" /> },
+        { name: "Vue.js", icon: <Globe className="w-5 h-5 text-green-400" /> },
+        { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" /> }
+      ]
     },
     {
       title: "Backend",
-      skills: ["Node.js", "Python", "Express", "FastAPI", "PostgreSQL", "MongoDB"]
+      skills: [
+        { name: "Node.js", icon: <Server className="w-5 h-5 text-green-500" /> },
+        { name: "Python", icon: <Code className="w-5 h-5 text-blue-500" /> },
+        { name: "Express", icon: <Server className="w-5 h-5 text-gray-400" /> },
+        { name: "FastAPI", icon: <Server className="w-5 h-5 text-teal-400" /> },
+        { name: "PostgreSQL", icon: <Database className="w-5 h-5 text-blue-600" /> },
+        { name: "MongoDB", icon: <Database className="w-5 h-5 text-green-600" /> }
+      ]
     },
     {
       title: "DevOps & Tools",
-      skills: ["Docker", "Git", "AWS", "Linux", "CI/CD", "Kubernetes"]
+      skills: [
+        { name: "Docker", icon: <Box className="w-5 h-5 text-blue-500" /> },
+        { name: "Git", icon: <GitBranch className="w-5 h-5 text-orange-500" /> },
+        { name: "AWS", icon: <Cloud className="w-5 h-5 text-orange-400" /> },
+        { name: "Linux", icon: <Terminal className="w-5 h-5 text-gray-300" /> },
+        { name: "CI/CD", icon: <Settings className="w-5 h-5 text-purple-400" /> },
+        { name: "Kubernetes", icon: <Cloud className="w-5 h-5 text-blue-400" /> }
+      ]
     },
     {
       title: "Languages",
-      skills: ["JavaScript", "TypeScript", "Python", "Java", "Go", "SQL"]
+      skills: [
+        { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" /> },
+        { name: "TypeScript", icon: <FileCode className="w-5 h-5 text-blue-600" /> },
+        { name: "Python", icon: <Code className="w-5 h-5 text-blue-500" /> },
+        { name: "Java", icon: <Cpu className="w-5 h-5 text-red-500" /> },
+        { name: "Go", icon: <Code className="w-5 h-5 text-cyan-500" /> },
+        { name: "SQL", icon: <Database className="w-5 h-5 text-gray-400" /> }
+      ]
     }
   ];
 
@@ -46,21 +74,12 @@ export const Skills = () => {
               <div className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
                   <div
-                    key={skill}
-                    className="flex items-center justify-between p-2 bg-slate-900/50 rounded-lg border border-slate-600"
+                    key={skill.name}
+                    className="flex items-center gap-3 p-3 bg-slate-900/50 rounded-lg border border-slate-600 hover:border-slate-500 transition-colors"
                     style={{ animationDelay: `${index * 100 + skillIndex * 50}ms` }}
                   >
-                    <span className="text-slate-300 font-mono text-sm">{skill}</span>
-                    <div className="flex space-x-1">
-                      {[...Array(5)].map((_, i) => (
-                        <div
-                          key={i}
-                          className={`w-2 h-2 rounded-full ${
-                            i < 4 ? "bg-blue-400" : "bg-slate-600"
-                          }`}
-                        />
-                      ))}
-                    </div>
+                    {skill.icon}
+                    <span className="text-slate-300 font-mono text-sm">{skill.name}</span>
                   </div>
                 ))}
               </div>
