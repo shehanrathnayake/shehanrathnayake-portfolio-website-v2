@@ -1,10 +1,11 @@
 
-import { Code, Terminal, Mail, Linkedin, Github, PenTool } from "lucide-react";
+import { Terminal } from "lucide-react";
 import { useEffect, useState } from "react";
+import { config } from "@/config";
 
 export const Hero = () => {
   const [text, setText] = useState("");
-  const fullText = "Software Engineer";
+  const fullText = config.personal.typingText;
 
   useEffect(() => {
     let i = 0;
@@ -19,37 +20,6 @@ export const Hero = () => {
 
     return () => clearInterval(timer);
   }, []);
-
-  const socialLinks = [
-    {
-      name: "Email",
-      href: "mailto:shehanr.rathnayake@gmail.com",
-      icon: Mail,
-      color: "text-red-400 hover:text-red-300",
-      bgColor: "hover:bg-red-500/10"
-    },
-    {
-      name: "LinkedIn",
-      href: "https://linkedin.com/in/shehanrathnayake",
-      icon: Linkedin,
-      color: "text-blue-400 hover:text-blue-300",
-      bgColor: "hover:bg-blue-500/10"
-    },
-    {
-      name: "GitHub",
-      href: "https://github.com/shehanrathnayake",
-      icon: Github,
-      color: "text-slate-300 hover:text-white",
-      bgColor: "hover:bg-slate-500/10"
-    },
-    {
-      name: "Blog",
-      href: "https://medium.com/@shehan_rathnayake",
-      icon: PenTool,
-      color: "text-green-400 hover:text-green-300",
-      bgColor: "hover:bg-green-500/10"
-    }
-  ];
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
@@ -68,8 +38,8 @@ export const Hero = () => {
         <div className="mb-8 flex justify-center">
           <div className="relative">
             <img
-              src="/profile.jpeg"
-              alt="Shehan Rathnayake"
+              src={config.personal.profileImage}
+              alt={config.personal.name}
               className="w-32 h-32 rounded-full object-cover border-4 border-slate-600 shadow-2xl"
             />
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-purple-500/20"></div>
@@ -77,7 +47,7 @@ export const Hero = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-          Hello World!
+          {config.hero.greeting}
         </h1>
 
         <div className="mb-8">
@@ -90,13 +60,12 @@ export const Hero = () => {
         </div>
 
         <p className="text-lg text-slate-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Passionate about creating elegant solutions to complex problems.
-          I build scalable applications with modern technologies and clean code practices.
+          {config.hero.description}
         </p>
 
         {/* Social Links */}
         <div className="flex justify-center gap-4">
-          {socialLinks.map((link) => {
+          {config.hero.socialLinks.map((link) => {
             const IconComponent = link.icon;
             return (
               <a

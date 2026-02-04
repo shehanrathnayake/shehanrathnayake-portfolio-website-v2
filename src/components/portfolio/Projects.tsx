@@ -1,33 +1,9 @@
 
 import { Code, Terminal } from "lucide-react";
+import { config } from "@/config";
 
 export const Projects = () => {
-  const projects = [
-    {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      tech: ["React", "Node.js", "PostgreSQL", "Stripe", "Docker"],
-      github: "#",
-      demo: "#",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
-    },
-    {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      tech: ["Vue.js", "Express", "Socket.io", "MongoDB", "AWS"],
-      github: "#",
-      demo: "#",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop"
-    },
-    {
-      title: "AI Chat Application",
-      description: "Modern chat application with AI integration, real-time messaging, and smart response suggestions using machine learning.",
-      tech: ["Next.js", "Python", "FastAPI", "OpenAI", "Redis"],
-      github: "#",
-      demo: "#",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop"
-    }
-  ];
+  const projects = config.projects;
 
   return (
     <section id="projects" className="py-20 bg-slate-900/50">
@@ -60,7 +36,7 @@ export const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent" />
               </div>
-              
+
               <div className="p-6">
                 <h3 className="text-xl font-semibold text-slate-100 mb-3 font-mono">
                   {project.title}
@@ -68,7 +44,7 @@ export const Projects = () => {
                 <p className="text-slate-400 mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tech.map((tech) => (
                     <span
@@ -79,7 +55,7 @@ export const Projects = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <div className="flex gap-4">
                   <a
                     href={project.github}

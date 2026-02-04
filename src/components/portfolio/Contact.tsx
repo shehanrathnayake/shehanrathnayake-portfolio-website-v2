@@ -1,5 +1,6 @@
 
-import { Mail, Terminal, ExternalLink, PenTool, Linkedin, Github } from "lucide-react";
+import { Terminal, ExternalLink, PenTool } from "lucide-react";
+import { config } from "@/config";
 
 export const Contact = () => {
   return (
@@ -11,10 +12,10 @@ export const Contact = () => {
             <span className="text-cyan-400 font-mono text-sm">contact.md</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-100 mb-4">
-            Get In Touch
+            {config.contact.title}
           </h2>
           <p className="text-slate-400 max-w-2xl mx-auto">
-            Have a project in mind or want to collaborate? I'd love to hear from you!
+            {config.contact.description}
           </p>
         </div>
 
@@ -29,16 +30,16 @@ export const Contact = () => {
                 <div className="text-slate-300">
                   <span className="text-blue-400">email:</span>
                   <a
-                    href="mailto:shehanr.rathnayake@gmail.com"
+                    href={config.personal.social.email}
                     className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
-                    "shehanr.rathnayake@gmail.com"
+                    "{config.personal.email}"
                   </a>
                 </div>
                 <div className="text-slate-300">
                   <span className="text-blue-400">linkedin:</span>
                   <a
-                    href="https://linkedin.com/in/shehanrathnayake"
+                    href={config.personal.social.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
@@ -49,7 +50,7 @@ export const Contact = () => {
                 <div className="text-slate-300">
                   <span className="text-blue-400">github:</span>
                   <a
-                    href="https://github.com/shehanrathnayake"
+                    href={config.personal.social.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
@@ -60,7 +61,7 @@ export const Contact = () => {
                 <div className="text-slate-300">
                   <span className="text-blue-400">blog:</span>
                   <a
-                    href="https://medium.com/@shehan_rathnayake"
+                    href={config.personal.social.medium}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
@@ -81,13 +82,13 @@ export const Contact = () => {
                 Check out my latest thoughts and technical articles on my blog.
               </p>
               <a
-                href="https://medium.com/@shehan_rathnayake"
+                href={config.contact.cta.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-mono text-sm"
               >
                 <PenTool className="w-4 h-4" />
-                <span>Read my blog on Medium</span>
+                <span>{config.contact.cta.text}</span>
                 <ExternalLink className="w-3 h-3" />
               </a>
               <p className="mt-4 text-sm">

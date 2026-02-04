@@ -1,36 +1,9 @@
 
 import { Terminal, ExternalLink, Calendar, BookOpen } from "lucide-react";
+import { config } from "@/config";
 
 export const Blog = () => {
-  const blogPosts = [
-    {
-      title: "Building Scalable React Applications",
-      description: "A comprehensive guide to architecting React applications that can grow with your team and user base. Learn about component patterns, state management, and performance optimization.",
-      publishDate: "2024-01-15",
-      readTime: "8 min read",
-      tags: ["React", "Architecture", "Performance"],
-      url: "https://medium.com/@shehan_rathnayake/building-scalable-react-applications-123",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=600&h=400&fit=crop"
-    },
-    {
-      title: "Modern TypeScript Best Practices",
-      description: "Explore advanced TypeScript techniques and patterns that will make your code more maintainable, type-safe, and developer-friendly.",
-      publishDate: "2024-01-08",
-      readTime: "6 min read",
-      tags: ["TypeScript", "Best Practices", "Developer Experience"],
-      url: "https://medium.com/@shehan_rathnayake/modern-typescript-best-practices-456",
-      image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=600&h=400&fit=crop"
-    },
-    {
-      title: "The Future of Web Development",
-      description: "Insights into emerging technologies and trends that are shaping the future of web development, from AI integration to new frameworks.",
-      publishDate: "2024-01-01",
-      readTime: "10 min read",
-      tags: ["Web Development", "Trends", "Innovation"],
-      url: "https://medium.com/@shehan_rathnayake/future-of-web-development-789",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop"
-    }
-  ];
+  const blogPosts = config.blog.posts;
 
   return (
     <section id="blog" className="py-20 bg-slate-950">
@@ -68,24 +41,24 @@ export const Blog = () => {
                   </span>
                 </div>
               </div>
-              
+
               <div className="p-6">
                 <div className="flex items-center gap-2 text-slate-400 text-sm mb-3">
                   <Calendar className="w-4 h-4" />
-                  <span className="font-mono">{new Date(post.publishDate).toLocaleDateString('en-US', { 
-                    year: 'numeric', 
-                    month: 'short', 
-                    day: 'numeric' 
+                  <span className="font-mono">{new Date(post.publishDate).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
                   })}</span>
                 </div>
-                
+
                 <h3 className="text-xl font-semibold text-slate-100 mb-3 font-mono">
                   {post.title}
                 </h3>
                 <p className="text-slate-400 mb-4 leading-relaxed">
                   {post.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2 mb-6">
                   {post.tags.map((tag) => (
                     <span
@@ -96,7 +69,7 @@ export const Blog = () => {
                     </span>
                   ))}
                 </div>
-                
+
                 <a
                   href={post.url}
                   target="_blank"
@@ -114,7 +87,7 @@ export const Blog = () => {
 
         <div className="text-center mt-12">
           <a
-            href="https://medium.com/@shehan_rathnayake"
+            href={config.contact.cta.url}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-slate-800/50 hover:bg-slate-800/70 text-slate-300 hover:text-orange-400 px-6 py-3 rounded-lg border border-slate-700 transition-all duration-200 hover:scale-105 font-mono"

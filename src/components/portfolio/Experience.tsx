@@ -1,17 +1,9 @@
 
 import { Terminal } from "lucide-react";
+import { config } from "@/config";
 
 export const Experience = () => {
-  const experiences = [
-    {
-      title: "Software Engineer",
-      company: "DevBranch (Pvt) Ltd",
-      companyLink: "https://devbranch.net",
-      period: "2024 - Present",
-      description: "Working on full-stack development projects using modern technologies. Experience includes building responsive frontends with React and robust backends using .NET and Python.",
-      tech: ["React", ".NET", "Python"]
-    }
-  ];
+  const experiences = config.experience;
 
   return (
     <section id="experience" className="py-20 bg-slate-950">

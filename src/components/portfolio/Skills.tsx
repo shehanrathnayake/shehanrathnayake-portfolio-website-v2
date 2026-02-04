@@ -1,55 +1,9 @@
 
-import { Code, Database, Server, Globe, Cpu, GitBranch, Cloud, Terminal, Layers, Box, Settings, FileCode } from "lucide-react";
+import { Code, Code2 } from "lucide-react";
+import { config } from "@/config";
 
 export const Skills = () => {
-  const skillCategories = [
-    {
-      title: "Frontend",
-      skills: [
-        { name: "React", icon: <Globe className="w-5 h-5 text-blue-400" /> },
-        { name: "TypeScript", icon: <FileCode className="w-5 h-5 text-blue-600" /> },
-        { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" /> },
-        { name: "Tailwind CSS", icon: <Layers className="w-5 h-5 text-cyan-400" /> },
-        // { name: "Next.js", icon: <Globe className="w-5 h-5 text-gray-300" /> },
-        // { name: "Vue.js", icon: <Globe className="w-5 h-5 text-green-400" /> },
-      ]
-    },
-    {
-      title: "Backend",
-      skills: [
-        { name: ".NET", icon: <Cpu className="w-5 h-5 text-purple-600" /> },
-        // { name: "Node.js", icon: <Server className="w-5 h-5 text-green-500" /> },
-        { name: "Python", icon: <Code className="w-5 h-5 text-blue-500" /> },
-        // { name: "Express", icon: <Server className="w-5 h-5 text-gray-400" /> },
-        { name: "FastAPI", icon: <Server className="w-5 h-5 text-teal-400" /> },
-        { name: "MySQL", icon: <Database className="w-5 h-5 text-blue-600" /> },
-        { name: "SQLServer", icon: <Database className="w-5 h-5 text-blue-600" /> },
-        // { name: "MongoDB", icon: <Database className="w-5 h-5 text-green-600" /> }
-      ]
-    },
-    {
-      title: "DevOps & Tools",
-      skills: [
-        { name: "Azure", icon: <Cloud className="w-5 h-5 text-blue-400" /> },
-        { name: "Docker", icon: <Box className="w-5 h-5 text-blue-500" /> },
-        { name: "Git", icon: <GitBranch className="w-5 h-5 text-orange-500" /> },
-        // { name: "Linux", icon: <Terminal className="w-5 h-5 text-gray-300" /> },
-        // { name: "CI/CD", icon: <Settings className="w-5 h-5 text-purple-400" /> },
-        // { name: "Kubernetes", icon: <Cloud className="w-5 h-5 text-blue-400" /> }
-      ]
-    },
-    // {
-    //   title: "Languages",
-    //   skills: [
-    //     { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" /> },
-    //     { name: "TypeScript", icon: <FileCode className="w-5 h-5 text-blue-600" /> },
-    //     { name: "Python", icon: <Code className="w-5 h-5 text-blue-500" /> },
-    //     { name: "Java", icon: <Cpu className="w-5 h-5 text-red-500" /> },
-    //     { name: "Go", icon: <Code className="w-5 h-5 text-cyan-500" /> },
-    //     { name: "SQL", icon: <Database className="w-5 h-5 text-gray-400" /> }
-    //   ]
-    // }
-  ];
+  const skillCategories = config.skills;
 
   return (
     <section id="skills" className="py-20 bg-slate-950">

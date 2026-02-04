@@ -1,6 +1,6 @@
-
 import React from "react";
-import { User, Code, Terminal, Coffee, Cpu } from "lucide-react";
+import { User, Terminal } from "lucide-react";
+import { config } from "@/config";
 
 export const About = () => {
   return (
@@ -26,19 +26,19 @@ export const About = () => {
               </div>
               <div className="space-y-2 pl-4 font-mono text-sm">
                 <div className="text-slate-300">
-                  <span className="text-blue-400">name:</span> <span className="text-green-400">"Shehan Rathnayake"</span>,
+                  <span className="text-blue-400">name:</span> <span className="text-green-400">"{config.about.codeBlock.name}"</span>,
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">title:</span> <span className="text-green-400">"Software Engineer"</span>,
+                  <span className="text-blue-400">title:</span> <span className="text-green-400">"{config.about.codeBlock.title}"</span>,
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">location:</span> <span className="text-green-400">"Colombo"</span>,
+                  <span className="text-blue-400">location:</span> <span className="text-green-400">"{config.about.codeBlock.location}"</span>,
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">experience:</span> <span className="text-yellow-400">2</span>,
+                  <span className="text-blue-400">experience:</span> <span className="text-yellow-400">{config.about.codeBlock.experience}</span>,
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">passion:</span> <span className="text-green-400">"Clean Code & Innovation"</span>
+                  <span className="text-blue-400">passion:</span> <span className="text-green-400">"{config.about.codeBlock.passion}"</span>
                 </div>
               </div>
               <div className="text-sm text-slate-400 font-mono mt-4">{"}"};
@@ -48,34 +48,23 @@ export const About = () => {
 
           {/* Text Content Section */}
           <div className="lg:col-span-1 space-y-6">
-            <p className="text-slate-300 leading-relaxed">
-              I'm a passionate software engineer with a love for creating innovative solutions
-              and writing clean, efficient code. My journey in programming started with curiosity
-              and has evolved into a career dedicated to building applications that make a difference.
-            </p>
-
-            <p className="text-slate-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to
-              open-source projects, or sharing knowledge with the developer community. I believe
-              in continuous learning and staying up-to-date with industry trends.
-            </p>
+            {config.about.description.map((paragraph, index) => (
+              <p key={index} className="text-slate-300 leading-relaxed">
+                {paragraph}
+              </p>
+            ))}
 
             <div className="grid grid-cols-3 gap-4">
-              <div className="text-center p-4 bg-slate-800/20 rounded-lg border border-slate-700">
-                <Terminal className="w-8 h-8 text-green-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-100">2+</div>
-                <div className="text-sm text-slate-400">Years Exp</div>
-              </div>
-              <div className="text-center p-4 bg-slate-800/20 rounded-lg border border-slate-700">
-                <Code className="w-8 h-8 text-blue-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-100">10+</div>
-                <div className="text-sm text-slate-400">Projects Delivered</div>
-              </div>
-              <div className="text-center p-4 bg-slate-800/20 rounded-lg border border-slate-700">
-                <Cpu className="w-8 h-8 text-purple-400 mx-auto mb-2" />
-                <div className="text-2xl font-bold text-slate-100">15+</div>
-                <div className="text-sm text-slate-400">Technologies</div>
-              </div>
+              {config.about.stats.map((stat, index) => {
+                const Icon = stat.icon;
+                return (
+                  <div key={index} className="text-center p-4 bg-slate-800/20 rounded-lg border border-slate-700">
+                    <Icon className={`w-8 h-8 mx-auto mb-2 ${stat.color}`} />
+                    <div className="text-2xl font-bold text-slate-100">{stat.value}</div>
+                    <div className="text-sm text-slate-400">{stat.label}</div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
