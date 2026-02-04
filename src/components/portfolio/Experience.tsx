@@ -4,25 +4,12 @@ import { Terminal } from "lucide-react";
 export const Experience = () => {
   const experiences = [
     {
-      title: "Senior Software Engineer",
-      company: "Tech Company Inc.",
-      period: "2022 - Present",
-      description: "Lead development of microservices architecture, mentor junior developers, and implement CI/CD pipelines. Reduced deployment time by 60% and improved system reliability.",
-      tech: ["React", "Node.js", "Docker", "AWS", "Kubernetes"]
-    },
-    {
-      title: "Full Stack Developer",
-      company: "Startup Solutions",
-      period: "2020 - 2022",
-      description: "Built scalable web applications from scratch, collaborated with design team, and optimized database performance. Delivered 15+ projects on time and within budget.",
-      tech: ["Vue.js", "Python", "PostgreSQL", "Redis", "GCP"]
-    },
-    {
-      title: "Frontend Developer",
-      company: "Digital Agency",
-      period: "2019 - 2020",
-      description: "Developed responsive web interfaces, improved website performance by 40%, and implemented modern JavaScript frameworks. Worked with cross-functional teams.",
-      tech: ["JavaScript", "React", "CSS3", "Webpack", "Git"]
+      title: "Software Engineer",
+      company: "DevBranch (Pvt) Ltd",
+      companyLink: "https://devbranch.net",
+      period: "2024 - Present",
+      description: "Working on full-stack development projects using modern technologies. Experience includes building responsive frontends with React and robust backends using .NET and Python.",
+      tech: ["React", ".NET", "Python"]
     }
   ];
 
@@ -54,17 +41,17 @@ export const Experience = () => {
                   <h3 className="text-xl font-semibold text-slate-100 font-mono">
                     {exp.title}
                   </h3>
-                  <p className="text-blue-400 font-semibold">{exp.company}</p>
+                  <a href={exp.companyLink} target="_blank" rel="noopener noreferrer" className="text-blue-400 font-semibold">{exp.company}</a>
                 </div>
                 <div className="bg-slate-700/50 px-4 py-2 rounded-lg border border-slate-600 mt-2 lg:mt-0">
                   <span className="text-slate-300 font-mono text-sm">{exp.period}</span>
                 </div>
               </div>
-              
+
               <p className="text-slate-400 mb-4 leading-relaxed">
                 {exp.description}
               </p>
-              
+
               <div className="flex flex-wrap gap-2">
                 {exp.tech.map((tech) => (
                   <span

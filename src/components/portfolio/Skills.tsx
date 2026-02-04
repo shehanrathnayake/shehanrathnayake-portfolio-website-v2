@@ -8,45 +8,47 @@ export const Skills = () => {
       skills: [
         { name: "React", icon: <Globe className="w-5 h-5 text-blue-400" /> },
         { name: "TypeScript", icon: <FileCode className="w-5 h-5 text-blue-600" /> },
+        { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" /> },
         { name: "Tailwind CSS", icon: <Layers className="w-5 h-5 text-cyan-400" /> },
-        { name: "Next.js", icon: <Globe className="w-5 h-5 text-gray-300" /> },
-        { name: "Vue.js", icon: <Globe className="w-5 h-5 text-green-400" /> },
-        { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" /> }
+        // { name: "Next.js", icon: <Globe className="w-5 h-5 text-gray-300" /> },
+        // { name: "Vue.js", icon: <Globe className="w-5 h-5 text-green-400" /> },
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "Node.js", icon: <Server className="w-5 h-5 text-green-500" /> },
+        { name: ".NET", icon: <Cpu className="w-5 h-5 text-purple-600" /> },
+        // { name: "Node.js", icon: <Server className="w-5 h-5 text-green-500" /> },
         { name: "Python", icon: <Code className="w-5 h-5 text-blue-500" /> },
-        { name: "Express", icon: <Server className="w-5 h-5 text-gray-400" /> },
+        // { name: "Express", icon: <Server className="w-5 h-5 text-gray-400" /> },
         { name: "FastAPI", icon: <Server className="w-5 h-5 text-teal-400" /> },
-        { name: "PostgreSQL", icon: <Database className="w-5 h-5 text-blue-600" /> },
-        { name: "MongoDB", icon: <Database className="w-5 h-5 text-green-600" /> }
+        { name: "MySQL", icon: <Database className="w-5 h-5 text-blue-600" /> },
+        { name: "SQLServer", icon: <Database className="w-5 h-5 text-blue-600" /> },
+        // { name: "MongoDB", icon: <Database className="w-5 h-5 text-green-600" /> }
       ]
     },
     {
       title: "DevOps & Tools",
       skills: [
+        { name: "Azure", icon: <Cloud className="w-5 h-5 text-blue-400" /> },
         { name: "Docker", icon: <Box className="w-5 h-5 text-blue-500" /> },
         { name: "Git", icon: <GitBranch className="w-5 h-5 text-orange-500" /> },
-        { name: "AWS", icon: <Cloud className="w-5 h-5 text-orange-400" /> },
-        { name: "Linux", icon: <Terminal className="w-5 h-5 text-gray-300" /> },
-        { name: "CI/CD", icon: <Settings className="w-5 h-5 text-purple-400" /> },
-        { name: "Kubernetes", icon: <Cloud className="w-5 h-5 text-blue-400" /> }
+        // { name: "Linux", icon: <Terminal className="w-5 h-5 text-gray-300" /> },
+        // { name: "CI/CD", icon: <Settings className="w-5 h-5 text-purple-400" /> },
+        // { name: "Kubernetes", icon: <Cloud className="w-5 h-5 text-blue-400" /> }
       ]
     },
-    {
-      title: "Languages",
-      skills: [
-        { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" /> },
-        { name: "TypeScript", icon: <FileCode className="w-5 h-5 text-blue-600" /> },
-        { name: "Python", icon: <Code className="w-5 h-5 text-blue-500" /> },
-        { name: "Java", icon: <Cpu className="w-5 h-5 text-red-500" /> },
-        { name: "Go", icon: <Code className="w-5 h-5 text-cyan-500" /> },
-        { name: "SQL", icon: <Database className="w-5 h-5 text-gray-400" /> }
-      ]
-    }
+    // {
+    //   title: "Languages",
+    //   skills: [
+    //     { name: "JavaScript", icon: <Code className="w-5 h-5 text-yellow-400" /> },
+    //     { name: "TypeScript", icon: <FileCode className="w-5 h-5 text-blue-600" /> },
+    //     { name: "Python", icon: <Code className="w-5 h-5 text-blue-500" /> },
+    //     { name: "Java", icon: <Cpu className="w-5 h-5 text-red-500" /> },
+    //     { name: "Go", icon: <Code className="w-5 h-5 text-cyan-500" /> },
+    //     { name: "SQL", icon: <Database className="w-5 h-5 text-gray-400" /> }
+    //   ]
+    // }
   ];
 
   return (
@@ -65,7 +67,7 @@ export const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div key={category.title} className="bg-slate-800/30 border border-slate-700 rounded-xl p-6 backdrop-blur-sm hover:bg-slate-800/50 transition-all duration-300">
               <h3 className="text-xl font-semibold text-slate-100 mb-4 font-mono">

@@ -27,19 +27,19 @@ export const Contact = () => {
               </div>
               <div className="space-y-2 font-mono text-sm">
                 <div className="text-slate-300">
-                  <span className="text-blue-400">email:</span> 
-                  <a 
-                    href="mailto:shehanr.rathnayake@gmail.com" 
+                  <span className="text-blue-400">email:</span>
+                  <a
+                    href="mailto:shehanr.rathnayake@gmail.com"
                     className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
                     "shehanr.rathnayake@gmail.com"
                   </a>
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">linkedin:</span> 
-                  <a 
-                    href="https://linkedin.com/in/shehanrathnayake" 
-                    target="_blank" 
+                  <span className="text-blue-400">linkedin:</span>
+                  <a
+                    href="https://linkedin.com/in/shehanrathnayake"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
@@ -47,10 +47,10 @@ export const Contact = () => {
                   </a>
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">github:</span> 
-                  <a 
-                    href="https://github.com/shehanrathnayake" 
-                    target="_blank" 
+                  <span className="text-blue-400">github:</span>
+                  <a
+                    href="https://github.com/shehanrathnayake"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
@@ -58,10 +58,10 @@ export const Contact = () => {
                   </a>
                 </div>
                 <div className="text-slate-300">
-                  <span className="text-blue-400">blog:</span> 
-                  <a 
-                    href="https://medium.com/@shehan_rathnayake" 
-                    target="_blank" 
+                  <span className="text-blue-400">blog:</span>
+                  <a
+                    href="https://medium.com/@shehan_rathnayake"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-green-400 hover:text-green-300 transition-colors ml-1 break-all"
                   >
@@ -70,11 +70,11 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Additional Information */}
             <div className="text-slate-400">
               <p className="mb-4">
-                I'm always interested in new opportunities and exciting projects. 
+                I'm always interested in new opportunities and exciting projects.
                 Whether you have a question or just want to say hi, feel free to reach out!
               </p>
               <p className="mb-4">
@@ -95,12 +95,6 @@ export const Contact = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="text-center mt-12 pt-8 border-t border-slate-800">
-          <p className="text-slate-400 font-mono text-sm">
-            © 2025 Shehan Rathnayake. All Rights Reserved.
-          </p>
         </div>
       </div>
     </section>

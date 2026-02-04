@@ -7,6 +7,7 @@ import { Blog } from "@/components/portfolio/Blog";
 import { Experience } from "@/components/portfolio/Experience";
 import { Contact } from "@/components/portfolio/Contact";
 import { Navigation } from "@/components/portfolio/Navigation";
+import { Footer } from "@/components/portfolio/Footer";
 
 const Index = () => {
   return (
@@ -15,12 +16,13 @@ const Index = () => {
       <main className="relative">
         <Hero />
         <About />
-        <Skills />
         <Experience />
+        <Skills />
         <Projects />
         <Blog />
         <Contact />
       </main>
+      <Footer />
     </div>
   );
 };
